@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="質數列表" Height="850" Width="800">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.492"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Label x:Name="label1" Content="請輸入一個數值n" HorizontalAlignment="Left" Margin="69,28,0,0" VerticalAlignment="Top" Height="51" Width="175" FontSize="20
+               "/>
+        <TextBox x:Name="textbox1" TextWrapping="Wrap" Margin="251,14,325,757" TextChanged="TextBox_TextChanged" FontSize="20" Background="#FFBB8888" RenderTransformOrigin="0.503,0.362"/>
+        <Button x:Name="button1" Content="OK" Margin="501,4,35,753" Click="Button1_Click" FontSize="20" Background="#FF947878"/>
+        <TextBlock x:Name="textblock1" HorizontalAlignment="Left" Margin="69,118,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="156" Width="697"/>
+        <TextBlock x:Name="textblock2" HorizontalAlignment="Left" Margin="66,322,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="485" Width="678"/>
 
     </Grid>
 </Window>
